@@ -1,0 +1,21 @@
+{
+  "name": "career-horizon",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "frontend",
+    "admin",
+    "backend"
+  ],
+  "scripts": {
+    "dev:frontend": "npm --workspace frontend run dev",
+    "dev:admin": "npm --workspace admin run dev",
+    "dev:backend": "npm --workspace backend run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

@@ -26,6 +26,10 @@ app.use(cors({
   credentials: true,
 }));
 
+app.get("/", (_req, res) => {
+  res.send("Career Horizon Backend API is running 🚀");
+});
+
 // API Routes
 app.use("/api/admins", adminRoutes);
 app.use("/api/hrs", hrRoutes);

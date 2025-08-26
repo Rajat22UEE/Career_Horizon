@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import JobCard from './components/JobCard';
+import JobCard from '../../components/JobCard';
 import { useEffect } from 'react';
 import { listJobs } from '../../lib/api';
 

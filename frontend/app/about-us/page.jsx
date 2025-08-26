@@ -1,10 +1,10 @@
 "use client";
 
 import React from 'react';
-import AboutCard from './components/AboutCard';
-import Intro from './components/Intro';
-import OurTeam from './components/OurTeam';
-import Footer from '../components/Footer';
+import AboutCard from '../../components/AboutCard';
+import Intro from '../../components/Intro';
+import OurTeam from '../../components/OurTeam';
+import Footer from '../../components/Footer';
 
 export default function AboutUsPage() {
   return (

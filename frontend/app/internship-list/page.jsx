@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 // import internshipData from './components/Internship-data';
 import { listInternships } from '../../lib/api';
-import InternshipCard from './components/InternshipCard'; 
+import InternshipCard from '../../components/InternshipCard'; 
 
 
 const ITEMS_PER_PAGE = 12;

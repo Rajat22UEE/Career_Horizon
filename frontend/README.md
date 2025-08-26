@@ -1,43 +1,13 @@
-### 4. Frontend Folder: `career-horizon/frontend/README.md`
-
-```markdown
 # ✨ Career Horizon - Frontend
 
-This is the public-facing user application for Career Horizon, built with Next.js and styled with Tailwind CSS. It allows users to browse jobs, internships, and other career-related resources.
+## 📜 Explanation
 
----
+This is the public-facing application for Career Horizon where users can explore and find career opportunities. Built with Next.js for optimal performance and SEO, it provides a fast, responsive, and user-friendly experience for browsing jobs, internships, and HR contacts.
 
-## 📋 Features
+## ✨ Features
 
-* **Job & Internship Listings:** Clean, card-based UI to display opportunities.
-* **HR Contacts:** A dedicated page to view a list of HR contacts.
-* **Responsive Design:** Fully responsive layout for mobile, tablet, and desktop.
-* **Fast Performance:** Built with Next.js for server-side rendering and optimized performance.
-* **Engaging UI:** Smooth animations and a modern user interface.
-
----
-
-## 🚀 Local Development
-
-### 1. Navigate to the Frontend Directory
-```bash
-# From the root of the project
-cd frontend
-2. Install Dependencies
-If you haven't installed from the root, run:
-
-Bash
-
-npm install
-3. Set Up Environment Variables
-Create a .env.local file in this directory (/frontend) and add the API URL.
-
-Code snippet
-
-# This should point to your locally running backend server
-NEXT_PUBLIC_API_URL=http://localhost:5000/api
-4. Run the Development Server
-Bash
-
-npm run dev
-The frontend application will be available at http://localhost:3000.
+* **Server-Side Rendering (SSR):** Leverages Next.js to deliver fast page loads and improve search engine visibility.
+* **Job & Internship Listings:** Displays all available opportunities in a clean, card-based UI with easy-to-read details.
+* **HR Contacts Directory:** A dedicated page where users can view a list of professional HR contacts.
+* **Responsive Design:** Ensures a seamless experience across all devices, including desktops, tablets, and smartphones.
+* **Engaging UI:** Features a modern design with intuitive navigation to help users find information quickly.

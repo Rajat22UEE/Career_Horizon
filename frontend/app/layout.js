@@ -1,4 +1,4 @@
-// File: career_horizon/frontend/app/layout.js
+// File: app/layout.js
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
@@ -27,10 +27,13 @@ export default function RootLayout({ children }) {
       >
         {/* Sticky Navbar */}
         <div className="sticky top-0 z-50 bg-white shadow">
+          {/* Client Component */}
           <Navbar />
         </div>
-        {/* Main content area */}
+
+        {/* Main content */}
         <main className="pt-0">
+          {/* Client Component */}
           <AOSInit />
           {children}
         </main>

@@ -1,5 +1,5 @@
-
 "use client";
+
 import React, { useEffect, useState } from 'react';
 import HRCard from './components/HRCard';
 import { listHRs } from '../../lib/api';

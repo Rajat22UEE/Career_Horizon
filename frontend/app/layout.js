@@ -1,8 +1,7 @@
-// File: app/layout.js
+// File: frontend/app/layout.js
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
-import AOSInit from "./components/AOSInit";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,16 +26,11 @@ export default function RootLayout({ children }) {
       >
         {/* Sticky Navbar */}
         <div className="sticky top-0 z-50 bg-white shadow">
-          {/* Client Component */}
           <Navbar />
         </div>
 
-        {/* Main content */}
-        <main className="pt-0">
-          {/* Client Component */}
-          <AOSInit />
-          {children}
-        </main>
+        {/* Main content area */}
+        <main className="pt-0">{children}</main>
       </body>
     </html>
   );

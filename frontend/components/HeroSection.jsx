@@ -54,7 +54,7 @@ const HeroSection = () => {
           {/* Job Card */}
           <motion.div variants={itemVariants}>
             <Link
-              href="/jobs-list"
+              href="/jobs"
               className="block group relative p-6 rounded-2xl border bg-[#B9A0FF] shadow-none transition-all ease-in-out duration-300 hover:-translate-y-1 hover:shadow-[2px_5px_0_0_rgba(0,0,0,1)] active:translate-y-0.5 active:shadow-none w-full min-h-[240px]"
             >
               <div className="flex items-center gap-4 mb-3">
@@ -76,7 +76,7 @@ const HeroSection = () => {
           {/* Internship Card */}
           <motion.div variants={itemVariants}>
             <Link
-              href="/internship-list"
+              href="/internships"
               className="block group relative p-6 rounded-2xl border bg-[#24605A] shadow-none transition-all ease-in-out duration-300 hover:-translate-y-1 hover:shadow-[2px_5px_0_0_rgba(0,0,0,1)] active:translate-y-0.5 active:shadow-none w-full min-h-[240px]"
             >
               <div className="flex items-center gap-4 mb-3">

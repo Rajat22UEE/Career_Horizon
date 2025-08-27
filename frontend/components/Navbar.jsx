@@ -31,10 +31,10 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8 text-lg text-gray-700 relative">
           <NavItem icon={<Home className="w-5 h-5" />} label="Home" href="/" />
-          <NavItem icon={<Info className="w-5 h-5" />} label="About Us" href="/about-us" />
-          <NavItem icon={<Briefcase className="w-5 h-5" />} label="Jobs" href="/jobs-list" />
-          <NavItem icon={<GraduationCap className="w-5 h-5" />} label="Internships" href="/internship-list" />
-          <NavItem icon={<Users className="w-5 h-5" />} label="HR Desk" href="/hr-list" />
+          <NavItem icon={<Info className="w-5 h-5" />} label="About Us" href="/about" />
+          <NavItem icon={<Briefcase className="w-5 h-5" />} label="Jobs" href="/jobs" />
+          <NavItem icon={<GraduationCap className="w-5 h-5" />} label="Internships" href="/internship" />
+          <NavItem icon={<Users className="w-5 h-5" />} label="HR Desk" href="/hr" />
         </div>
 
         {/* Hamburger Icon */}

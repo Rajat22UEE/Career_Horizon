@@ -8,7 +8,7 @@ export default function HRCard() {
   return (
     <div className='bg-white py-[1px]'>
       <Link
-      href="/hr-list"
+      href="/hr"
       className="block group relative p-8 rounded-3xl border bg-[#B9A0FF] shadow-none transition-all ease-in-out duration-300 hover:-translate-y-1 hover:shadow-[2px_5px_0_0_rgba(0,0,0,1)] active:translate-y-0.5 active:shadow-none max-w-6xl mx-auto my-20"
     >
       {/* Icon + Heading */}

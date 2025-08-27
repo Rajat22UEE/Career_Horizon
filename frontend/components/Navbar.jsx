@@ -33,7 +33,7 @@ const Navbar = () => {
           <NavItem icon={<Home className="w-5 h-5" />} label="Home" href="/" />
           <NavItem icon={<Info className="w-5 h-5" />} label="About Us" href="/about" />
           <NavItem icon={<Briefcase className="w-5 h-5" />} label="Jobs" href="/jobs" />
-          <NavItem icon={<GraduationCap className="w-5 h-5" />} label="Internships" href="/internship" />
+          <NavItem icon={<GraduationCap className="w-5 h-5" />} label="Internships" href="/internships" />
           <NavItem icon={<Users className="w-5 h-5" />} label="HR Desk" href="/hr" />
         </div>
 
@@ -50,10 +50,10 @@ const Navbar = () => {
         <div className="md:hidden absolute top-20 left-0 w-full bg-white/90 backdrop-blur-md z-40 shadow-lg">
           <div className="flex flex-col items-start gap-4 px-6 py-6 text-lg text-gray-800">
             <NavItemMobile icon={<Home className="w-5 h-5" />} label="Home" href="/" onClick={toggleMobileMenu} />
-            <NavItemMobile icon={<Info className="w-5 h-5" />} label="About Us" href="/about-us" onClick={toggleMobileMenu} />
-            <NavItemMobile icon={<Briefcase className="w-5 h-5" />} label="Jobs" href="/jobs-list" onClick={toggleMobileMenu} />
-            <NavItemMobile icon={<GraduationCap className="w-5 h-5" />} label="Internships" href="/internship-list" onClick={toggleMobileMenu} />
-            <NavItemMobile icon={<Users className="w-5 h-5" />} label="HR Desk" href="/hr-list" onClick={toggleMobileMenu} />
+            <NavItemMobile icon={<Info className="w-5 h-5" />} label="About Us" href="/about" onClick={toggleMobileMenu} />
+            <NavItemMobile icon={<Briefcase className="w-5 h-5" />} label="Jobs" href="/jobs" onClick={toggleMobileMenu} />
+            <NavItemMobile icon={<GraduationCap className="w-5 h-5" />} label="Internships" href="/internship" onClick={toggleMobileMenu} />
+            <NavItemMobile icon={<Users className="w-5 h-5" />} label="HR Desk" href="/hr" onClick={toggleMobileMenu} />
           </div>
         </div>
       )}

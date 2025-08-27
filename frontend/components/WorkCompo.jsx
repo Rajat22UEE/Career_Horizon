@@ -1,14 +1,11 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React from 'react';
 import { Bolt, Globe, Users } from 'lucide-react';
-import { motion, useInView } from 'framer-motion';
 
 const headingText = 'HOW IT WORKS';
 const descriptionText =
-  'Discover how Career Horizon streamlines your  job and internship search journey.';
+  'Discover how Career Horizon streamlines your job and internship search journey.';
 
 function Card({
   icon,
@@ -22,7 +19,6 @@ function Card({
 }) {
   return (
     <div
-      data-aos="fade-up"
       className={`flex items-start gap-4 p-5 sm:p-6 min-h-[180px] rounded-2xl bg-white border ${borderColor} 
       shadow-md transition duration-300 hover:shadow-xl hover:${borderColor} hover:ring-2 ${ringColor}`}
       style={{ boxShadow: `0 0 10px ${shadowColor}` }}
@@ -41,53 +37,17 @@ function Card({
 }
 
 export default function WorkCompo() {
-  const ref = useRef(null);
-  const inView = useInView(ref, { amount: 0.5, once: true });
-
-  useEffect(() => {
-    AOS.init({ duration: 800, once: true });
-  }, []);
-
   return (
     <div className="py-16 sm:py-20 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-10" ref={ref}>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-10">
         <div className="grid grid-cols-1 md:grid-cols-2 items-start gap-10 md:gap-12">
-          {/* Left Side: Animated Text */}
+          {/* Left Side: Heading & Description */}
           <div className="md:sticky md:top-20 lg:sticky lg:top-20 self-start">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-800 mb-5 leading-tight">
-              {headingText.split('').map((char, index) => (
-                <motion.span
-                  key={index}
-                  initial={{ opacity: 0, y: 40 }}
-                  animate={inView ? { opacity: 1, y: 0 } : {}}
-                  transition={{
-                    duration: 1.5,
-                    ease: 'easeOut',
-                    delay: index * 0.01,
-                  }}
-                  className={char === ' ' ? 'inline-block w-2' : 'inline-block'}
-                >
-                  {char}
-                </motion.span>
-              ))}
+              {headingText}
             </h2>
-
             <p className="text-base sm:text-lg text-gray-600 font-medium">
-              {descriptionText.split('').map((char, index) => (
-                <motion.span
-                  key={index}
-                  initial={{ opacity: 0, y: 40 }}
-                  animate={inView ? { opacity: 1, y: 0 } : {}}
-                  transition={{
-                    duration: 0.8,
-                    ease: 'easeOut',
-                    delay: 0.5 + index * 0.01,
-                  }}
-                  className={char === ' ' ? 'inline-block w-1' : 'inline-block'}
-                >
-                  {char}
-                </motion.span>
-              ))}
+              {descriptionText}
             </p>
           </div>
 

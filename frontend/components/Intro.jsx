@@ -10,7 +10,6 @@ const infoCards = [
     description:
       'CareerHorizon is a career empowerment platform connecting aspiring professionals with real job and internship opportunities along with verified HR contacts.',
     bg: 'bg-blue-800',
-    delay: 0,
   },
   {
     title: 'Our Vision',
@@ -18,7 +17,6 @@ const infoCards = [
     description:
       'To become India’s most trusted launchpad for careers by enabling access to meaningful work and growth opportunities for everyone.',
     bg: 'bg-purple-800',
-    delay: 200,
   },
   {
     title: 'Our Mission',
@@ -26,7 +24,6 @@ const infoCards = [
     description:
       'To bridge the gap between talent and opportunity by providing reliable resources, real-time listings, and supportive career tools.',
     bg: 'bg-red-800',
-    delay: 400,
   },
 ];
 
@@ -43,9 +40,6 @@ export default function Intro() {
         {infoCards.map((card, index) => (
           <div
             key={index}
-            data-aos="fade-up"
-            data-aos-delay={card.delay}
-            data-aos-duration="800"
             className={`${card.bg} text-white border border-white/10 rounded-2xl p-6 text-center 
               transition-all duration-300 ease-in-out shadow-none 
               hover:-translate-y-1 hover:shadow-[2px_5px_0_0_rgba(0,0,0,1)] 

@@ -4,55 +4,28 @@ import React from "react";
 import Link from "next/link";
 import { Briefcase, GraduationCap } from "lucide-react";
 import { FaArrowRight } from "react-icons/fa";
-import { motion } from "framer-motion";
-
-const containerVariants = {
-  hidden: {},
-  show: {
-    transition: {
-      staggerChildren: 0.3,
-      delayChildren: 0.3,
-    },
-  },
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, y: 40 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
-};
 
 const HeroSection = () => {
   return (
     <section className="bg-white py-16 px-4 sm:px-6 md:px-12 lg:px-24">
-      <motion.div
-        className="max-w-6xl mx-auto flex flex-col items-center text-center"
-        variants={containerVariants}
-        initial="hidden"
-        animate="show"
-      >
+      <div className="max-w-6xl mx-auto flex flex-col items-center text-center">
         {/* Heading */}
-        <motion.h1
-          className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6"
-          variants={itemVariants}
-        >
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
           <span className="font-tektur block">Unlock Opportunities with</span>
           <span className="text-gray-800">Career</span>
           <span className="text-blue-600">Horizon</span>
-        </motion.h1>
+        </h1>
 
         {/* Description */}
-        <motion.p
-          className="text-base sm:text-lg md:text-xl font-semibold text-gray-400 max-w-2xl mb-12"
-          variants={itemVariants}
-        >
+        <p className="text-base sm:text-lg md:text-xl font-semibold text-gray-400 max-w-2xl mb-12">
           Discover top jobs and internships built for ambitious minds. Your
           career breakthrough starts here.
-        </motion.p>
+        </p>
 
         {/* Feature Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 w-full mt-4">
           {/* Job Card */}
-          <motion.div variants={itemVariants}>
+          <div>
             <Link
               href="/jobs"
               className="block group relative p-6 rounded-2xl border bg-[#B9A0FF] shadow-none transition-all ease-in-out duration-300 hover:-translate-y-1 hover:shadow-[2px_5px_0_0_rgba(0,0,0,1)] active:translate-y-0.5 active:shadow-none w-full min-h-[240px]"
@@ -71,10 +44,10 @@ const HeroSection = () => {
                 size={20}
               />
             </Link>
-          </motion.div>
+          </div>
 
           {/* Internship Card */}
-          <motion.div variants={itemVariants}>
+          <div>
             <Link
               href="/internships"
               className="block group relative p-6 rounded-2xl border bg-[#24605A] shadow-none transition-all ease-in-out duration-300 hover:-translate-y-1 hover:shadow-[2px_5px_0_0_rgba(0,0,0,1)] active:translate-y-0.5 active:shadow-none w-full min-h-[240px]"
@@ -93,9 +66,9 @@ const HeroSection = () => {
                 size={20}
               />
             </Link>
-          </motion.div>
+          </div>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 };

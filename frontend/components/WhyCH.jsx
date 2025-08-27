@@ -1,13 +1,9 @@
 'use client';
 
-import React, { useRef } from 'react';
+import React from 'react';
 import { Rocket, UserCheck, Search } from 'lucide-react';
-import { motion, useInView } from 'framer-motion';
 
 export default function WhyCH() {
-  const sectionRef = useRef(null);
-  const inView = useInView(sectionRef, { amount: 0.8, once: true });
-
   const reasons = [
     {
       icon: <Rocket className="w-8 h-8 sm:w-10 sm:h-10 text-white" />,
@@ -15,7 +11,6 @@ export default function WhyCH() {
       description:
         'Kickstart your career with our curated internships and job listings tailored to your skills.',
       bg: 'bg-blue-800',
-      aosDelay: '0',
     },
     {
       icon: <Search className="w-8 h-8 sm:w-10 sm:h-10 text-white" />,
@@ -23,7 +18,6 @@ export default function WhyCH() {
       description:
         'Use intelligent filters to find roles that match your ambitions and interests quickly.',
       bg: 'bg-emerald-800',
-      aosDelay: '200',
     },
     {
       icon: <UserCheck className="w-8 h-8 sm:w-10 sm:h-10 text-white" />,
@@ -31,32 +25,20 @@ export default function WhyCH() {
       description:
         'All listings are verified to ensure legitimate and trusted opportunities for your growth.',
       bg: 'bg-purple-800',
-      aosDelay: '400',
     },
   ];
 
   return (
-    <div className="py-16 sm:py-20 bg-white" ref={sectionRef}>
+    <div className="py-16 sm:py-20 bg-white">
       {/* Heading */}
       <div className="text-center mb-12 px-4 sm:px-6">
-        <motion.h2
-          initial={{ opacity: 0, y: 40 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-800 mb-4 leading-snug"
-        >
-          WHY CHOOSE{' '}
-          <span className="text-blue-600">CareerHorizon</span>
-        </motion.h2>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-800 mb-4 leading-snug">
+          WHY CHOOSE <span className="text-blue-600">CareerHorizon</span>
+        </h2>
 
-        <motion.p
-          className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 font-medium max-w-3xl mx-auto"
-          initial={{ opacity: 0, y: 30 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
-        >
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 font-medium max-w-3xl mx-auto">
           Elevate your career journey with a platform built for students and early professionals.
-        </motion.p>
+        </p>
       </div>
 
       {/* Cards */}
@@ -64,9 +46,6 @@ export default function WhyCH() {
         {reasons.map((reason, index) => (
           <div
             key={index}
-            data-aos="fade-up"
-            data-aos-delay={reason.aosDelay}
-            data-aos-duration="800"
             className={`relative p-6 sm:p-8 min-h-[200px] rounded-3xl text-white overflow-hidden 
               ${reason.bg} 
               shadow-none transition-all ease-in-out duration-300 

@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React from 'react';
 import { FaGithub, FaLinkedin, FaUserCircle } from 'react-icons/fa';
